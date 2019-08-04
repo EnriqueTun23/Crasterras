@@ -1,0 +1,378 @@
+:root {
+    --text: #fff;
+    --primary: #006633;
+    --secondary: #008e02;
+    --success: #2fac66;
+    --danger: red;
+    --warning: yellow;
+    --info: #80ce01;
+    --dark: black;
+}
+
+body {
+    margin: 0;
+    font-family: "Open sans";
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* video backgroud */
+
+.content {
+    margin: auto;
+    text-align: center;
+}
+
+.header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    filter: brightness(.5);
+}
+
+.home-section {
+    z-index: 25;
+    color: var(--text);
+    margin-top: 175px;
+    height: 150px;
+}
+
+
+/* end video backgroud */
+
+
+/* efecto nav */
+
+nav {
+    top: 0;
+    height: 85px;
+    display: block;
+    position: fixed;
+    width: 90%;
+    z-index: 99999;
+    transition: all ease .5s;
+}
+
+#logo {
+    float: left;
+    /* color: #fff; */
+    padding: 2px 20px;
+    font-size: 18px;
+    transition: all ease .5s;
+}
+
+#logo img {
+    width: 200px;
+    height: 80px;
+}
+
+nav ul {
+    float: right;
+    margin: 0;
+    padding: 25px 20px;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 12px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 19px;
+    font-weight: 600;
+}
+
+
+/* data efecto js menu */
+
+nav.shrink {
+    /* height: 85px; */
+    background-color: var(--dark);
+    transition: all ease .5s;
+}
+
+nav.shrink ul {
+    padding: 35px 20px;
+}
+
+
+/* end efecto nav */
+
+
+/* globlal contenedores */
+
+.center {
+    margin-top: 31%;
+    z-index: 15;
+    text-align: center;
+}
+
+.center section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.espacio {
+    padding: 30px 0 0px 0;
+}
+
+
+/* end global */
+
+
+/* Nosotros*/
+
+.we-div {
+    height: 525px;
+}
+
+.target {
+    background-color: var(--primary);
+    width: 25%;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+    transition: all ease .3s;
+}
+
+.target:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all ease .3s;
+}
+
+.target div h2 {
+    font-size: 45px;
+}
+
+.target div p {
+    margin-top: 10px;
+}
+
+.target-img {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 65%;
+    position: relative;
+}
+
+.target-img img {
+    width: 100%;
+    height: 100%;
+    transition: all ease .3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.target-img img:hover {
+    transition: all ease .3s;
+    filter: brightness(.7);
+}
+
+.target-img div {
+    /* border: 1px red solid; */
+    width: 80;
+    height: 200px;
+    text-align: center;
+    position: absolute;
+    z-index: 4;
+    top: 25%;
+    left: 20%;
+    background-color: rgba(255, 255, 255, .7)
+}
+
+.target-img div h1 {
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+/* end nosotros*/
+
+
+/* parallax efect uno */
+
+.parallax-small-one {
+    height: 550px;
+    background-image: url(../img/cultivo1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.parallax-small-one article {
+    background-color: rgba(0, 142, 51, .2);
+    width: 50%;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+
+.parallax-small-one article .one {
+    background-color: rgba(0, 142, 51, .4);
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    z-index: 2;
+}
+
+.parallax-small-one article .two {
+    background-color: rgba(0, 142, 51, .6);
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    z-index: 4;
+}
+
+.parallax-small-one article .theere {
+    background-color: rgba(0, 142, 51, .8);
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    z-index: 6;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+}
+
+.service h1 {
+    font-size: 80px;
+    text-align: center;
+}
+
+
+/* end parallax one */
+
+
+/* parallax two */
+
+.parallax-small-two {
+    height: 550px;
+    background-image: url(../img/cultivo3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.parallax-small-two article {
+    background-color: rgba(0, 142, 51, .2);
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.parallax-small-two article .p-one {
+    position: absolute;
+    background-color: rgba(0, 142, 51, .4);
+    width: 95%;
+    height: 100%;
+    left: 5%;
+    z-index: 2;
+}
+
+.parallax-small-two article .p-two {
+    position: absolute;
+    background-color: rgba(0, 142, 51, .6);
+    width: 90%;
+    height: 100%;
+    left: 10%;
+    z-index: 2;
+}
+
+.parallax-small-two article .p-theere {
+    position: absolute;
+    background-color: rgba(0, 142, 51, .8);
+    width: 85%;
+    height: 100%;
+    left: 15%;
+    z-index: 2;
+}
+
+
+/* end parallax two */
+
+
+/* ofrecimientos */
+
+.center-two {
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.center-two div {
+    background-color: azure;
+    height: 250px;
+    width: 10%;
+}
+
+.center-two div img {
+    width: 100%;
+}
+
+.center-two div p {
+    margin-top: 15%;
+}
+
+
+/* end ofrecimientos */
+
+
+/* planes */
+
+.planes-one {
+    width: 40%;
+    height: 400px;
+}
+
+.planes-two {
+    width: 40%;
+    height: 400px;
+}
+
+
+/* end planes */
+
+.parallax-small-three {
+    height: 550px;
+    background-image: url(../img/cultivo2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    background-color: var(--primary);
+    height: 450px;
+}
